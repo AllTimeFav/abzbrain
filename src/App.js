@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import ButtonGradient from './assets/svg/ButtonGradient'
+import Header from './BrainwaveComp/Header'
+import Hero from './BrainwaveComp/Hero'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <div className='pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden'>
+        <Header />
+        <Hero />
+      </div>
+      <ButtonGradient />
+    </>
+  )
 }
 
-export default App;
+export default App
